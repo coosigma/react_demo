@@ -18,7 +18,10 @@ export class Root extends React.Component {
 					<div className='col-xs-10 col-xs-offset-1'>
 						<Switch>
 							<Route exact path={`${this.props.match.path}`} component={Home} />
-							<Route path={`${this.props.match.path}user`} component={User} />
+							<Route
+								path={`${this.props.match.path}user/:id`}
+								component={User}
+							/>
 							<Route path={`${this.props.match.path}home`} component={Home} />
 						</Switch>
 					</div>
